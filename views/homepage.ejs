@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: #0052cc;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003d99;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Real-Time Location Tracker</h1>
+    <button onclick="window.location.href='/users'">User</button>
+    <button onclick="window.location.href='/login'">Driver</button>
+</body>
+</html>

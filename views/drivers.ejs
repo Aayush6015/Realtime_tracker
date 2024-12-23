@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1c92d2, #f2fcfe);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: #00695c;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Driver Tracking Page</h1>
+    <p>Select an option:</p>
+    <button id="startSharing">Start Location Sharing</button>
+    <button id="stopSharing">Stop Location Sharing</button>
+
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
